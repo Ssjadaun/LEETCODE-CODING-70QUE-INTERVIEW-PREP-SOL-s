@@ -1,11 +1,6 @@
 #1768. Merge Strings Alternately
 class Solution(object):
     def mergeAlternately(self, word1, word2):
-        """
-        :type word1: str
-        :type word2: str
-        :rtype: str
-        """
         result = []
         i = 0
         while i < len(word1) or i < len(word2):
@@ -15,9 +10,4 @@ class Solution(object):
                 result.append(word2[i])
             i += 1
         return ''.join(result)
-        """
-        :type word1: str
-        :type word2: str
-        :rtype: str
-        """
         
